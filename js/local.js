@@ -7,10 +7,16 @@ var Local = function () {
     //绑定键盘事件
     var bindKeyEvent = function () {
         document.onkeydown = function (e) {
-            if(e.keyCode=38){
-
-            }else if(e.keyCode=39){
-
+            if(e.keyCode==38){//up
+                game.rotate();
+            }else if(e.keyCode==39){//right
+                game.right();
+            }else if(e.keyCode==40){//down
+                game.down();
+            }else if(e.keyCode==37){//left
+                game.left();
+            }else if(e.keyCode==32){//space
+                game.fall();
             }
         }
     };
@@ -22,6 +28,7 @@ var Local = function () {
         };
         game = new Game();
         game.init(doms);
+        bindKeyEvent();
     };
     //导出API
     this.start = start;
