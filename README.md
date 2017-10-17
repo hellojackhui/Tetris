@@ -12,7 +12,7 @@
 │  └─ squareFactory.js  //多种方块数据<br>
 ├─ css<br>
 │  ├─ style.css     //页面样式<br>
-└─ index.html       //游戏界面框架<br>
+├─ index.html       //游戏界面框架<br>
 
 #### 启动方式
 
